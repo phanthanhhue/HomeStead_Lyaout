@@ -1,0 +1,617 @@
+/* GLOBAL CSS */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+sub, sup {
+    font-size: 0.6rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.item-title {
+    color: #b06010;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+}
+
+.description {
+    color: #b06010;
+    padding: 1.5rem 0;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+}
+
+.slide-paginate {
+    position: absolute;
+    top: 75%;
+    left: 48%;
+    color: #b06010;
+    word-spacing: 0.3rem;
+    font-size: 0.7rem;
+}
+/* END GLOBAL CSS */
+
+/* HEADER CSS */
+
+.header {
+    background-color: #b06010;
+}
+
+.header__content {
+    width: 80%;
+    margin: auto;  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0.5rem 0;
+}
+
+.header__phone-number {
+    color: white;
+}
+
+.header__phone-number span, .header__email span {
+    padding-left: 0.7rem;
+}
+
+.header__email {
+    grid-column: 2/span 2;
+    color: white;
+    padding-left: 1rem;
+}
+
+.header__content p:hover {
+    cursor: pointer;
+}
+
+/* END HEADER CSS */
+
+/* NAVIGATION CSS */
+.nav__content {
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.main__nav {
+    margin-left: 1.5rem;
+}
+
+
+.main__nav ul li {
+    display: inline;
+    line-height: 60px;
+
+}
+
+.nav__content ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.nav__content ul li a:hover {
+    color: #b06010;
+    border-bottom: 3px solid #b06010;
+    padding-bottom: 0.5rem;
+}
+
+.nav__social .fa {
+    color: white;
+    float: left;
+    margin: 0.8rem 0.2rem;
+    float: right;
+}
+
+.nav__social .fa:hover {
+    cursor: pointer;
+}
+
+.nav__social .fa-facebook{
+    border: 1px solid #3b5998;
+    background-color: #3b5998;
+    padding: 0.25rem 0.48rem;
+    border-radius: 50px;
+}
+
+.nav__social .fa-twitter {
+    border: 1px solid #1da1f2;
+    background-color: #1da1f2;
+    padding: 0.25rem;
+    border-radius: 50px;
+}
+
+.nav__social .fa-dribbble {
+    border: 1px solid #ea4c89;
+    background-color: #ea4c89;
+    padding: 0.25rem 0.3rem;;
+    border-radius: 50px;
+}
+
+/* END NAVIGATION CSS */
+
+/* CAROUSEL CSS */
+.carousel {
+    background-image: url(../images/banner-1.jpg);
+    background-size: cover;
+    height: 40rem;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.carousel h1 {
+    padding: 18% 15%;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.carousel .left {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    padding-left: 5%;
+}
+
+.carousel .left:hover, .carousel .right:hover {
+    cursor: pointer;
+}
+
+.carousel .right {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    padding-right: 5%;
+}
+
+.carousel__social {
+    position: absolute;
+    color: #b06010;
+    top: 55%;
+    left: 43%;
+    font-size: 1.5rem;
+    word-spacing: 1.5rem;
+}
+
+.slide-paginate .active {
+    color: white;
+}
+
+.slide-paginate:hover, .carousel__social:hover {
+    cursor: pointer;
+}
+/* END CAROUSEL CSS */
+
+/* INTRODUCTION CSS */
+.intro {
+    padding: 2rem 0;
+}
+
+.intro__about {
+    margin: 2rem 15%;
+    text-align: center;
+}
+
+.intro__about .description {
+    display: block;
+}
+
+.intro__about p {
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.intro__list{
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.intro__item {
+    text-align: center;
+}
+
+.intro__item i {
+    color: #214c87;
+    font-size: 2.5rem;
+}
+
+.intro__item h1 {
+    margin: 1rem 0;
+}
+
+.intro__item p {
+    color: rgba(0, 0, 0, 0.336);
+}
+/* END INTRODUCTION CSS */
+
+/* SERVICES CSS */
+.services {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    background-color: #015bb1;
+    /* padding-bottom: 2rem; */
+}
+
+.service__img {
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;    
+}
+
+.service__content {
+    padding: 1rem 2rem;
+}
+
+.service__content h1 {
+    padding-top: 2rem;
+    color: white;
+}
+
+.service__content p {
+    word-spacing: 0.2rem;
+    padding: 0.5rem 0;
+    line-height: 1.8rem;;
+}
+
+.service__list {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.service__list span {
+    display: block;
+    padding: 0.7rem 0;
+}
+
+.service__list i {
+    padding-right: 0.7rem;
+}
+/* END SERVICES CSS */
+
+/* TEAM CSS */
+.team {
+    margin: 5% 10%;
+}
+
+.team__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.team__item {
+    text-align: center;
+}
+
+.team__item img {
+    border-radius: 50%;
+    padding-top: 1.5rem;
+}
+
+.team__item img:hover {
+    cursor: pointer;
+}
+
+.team__item h1 {
+    padding: 1.5rem 0;
+}
+
+.team__item p {
+    color: rgba(0, 0, 0, 0.336);
+    padding-bottom: 1rem;
+}
+
+.team__item hr {
+    width: 80%;
+    margin: auto;
+    height: 0.15rem;
+    background-color: black;
+}
+
+.team__item i {
+    padding: 1rem 0.3rem;
+    color: #015bb1;
+}
+.team__item i:hover {
+    cursor: pointer;
+}
+/* END TEAM CSS */
+
+/* FEEDBACK CSS */
+.feedback {
+    background-image: url(../images/banner-2.jpg);
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+}
+
+
+.feedback .section-title {
+    color: white;
+    padding-top: 3rem;
+    letter-spacing: 0.2rem;
+}
+.customer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 10%;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.customer__item {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.customer__info {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.customer__item img {
+    width: 4rem;
+}
+
+.customer__info p, .customer__info span {
+    position: absolute;
+    left: 42%;
+}
+
+.customer__info p {
+    top: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.customer__info span {
+    top: 40%;
+    font-size: 0.8rem;
+}
+
+.customer__comment {
+    background-color: rgba(255, 255, 255, 0.233);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+    /* opacity: 0; */
+}
+
+.customer__comment::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20.5%;
+    top: 52.3%;
+    width: 0;
+    height: 0;
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent; 
+    border-top: 0.8rem solid rgba(255, 255, 255, 0.233);
+    /* opacity: 0; */
+}
+.customer__info:hover {
+    cursor: pointer;
+}
+
+/* .customer__info:hover + .customer__comment {
+    opacity: 1;
+} */
+
+.feedback-paginate {
+    grid-column: 1/span 3;
+    position: absolute;
+    left: 48%;
+    top: 92%;
+}
+
+.feedback-paginate .active {
+    color: #ff8409
+}
+/* END FEEDBACK CSS */
+/* OVER VIEW CSS */
+.overview {
+    margin: 2rem 0;
+}
+
+.overview__content {
+    margin: 1rem 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: black;
+}
+
+.overview__item {
+    color: white;
+}
+
+.overview__item i {
+    color: #b06010;
+    font-size: 2rem;
+    float: left;
+    padding: 3rem 2rem;
+}
+
+.overview__item h1 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.overview__item p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+/* END OVER VIEW CSS */
+
+/* CONTACT CSS */
+.contact {
+    background-color: black;
+}
+
+.contact__content {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.contact__content .item-title {
+    padding: 2rem 0;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.contact__item p {
+    color: rgba(255, 255, 255, 0.637);
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.contact-us i {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.contact-us span {
+    padding-left: 0.7rem;
+}
+
+.about-us-content {
+    line-height: 1.6rem;
+}
+
+.about-us .fa {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.contact__item .fa-facebook {
+    background-color: #015bb1;
+    margin-right: 0.5rem;
+    border-radius: 50px;
+    padding: 0.3rem 0.5rem;
+}
+
+.contact__item .fa-twitter {
+    background-color: #1da1f2;
+    margin-right: 0.5rem;
+    border-radius: 50px;
+    padding: 0.3rem 0.35rem;
+}
+
+.contact__item .fa-dribbble {
+    background-color: #ea4c89;
+    margin-right: 0.5rem;
+    border-radius: 50px;
+    padding: 0.3rem 0.35rem;
+}
+
+.latest-news i {
+    color: #214c87;
+    padding: 0.5rem 0;
+}
+
+.latest-news span {
+    padding-right: 0.5rem;
+    color: rgba(255, 255, 255, 0.637);
+    padding-left: 0.7rem;
+}
+
+.contact__newsletter {
+    grid-column: 1/span 3;
+}
+
+.contact__newsletter h1 {
+    font-weight: 500;
+}
+
+.newsletter input {
+    padding-left: 0.5rem;
+    margin-right: 1.2rem;
+    width: 73%;
+    height: 2rem;
+    border: none;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: rgba(255, 255, 255, 0.733)
+}
+
+.newsletter button {
+    font-weight: 600;
+    width: 24%;
+    height: 2rem;
+    border: none;
+    background-color: #015bb1;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.newsletter button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #015bb1;
+}
+/* END CONTACT CSS */
+
+/* FOOTER CSS */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #121212;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #b06010;
+}
+.footer a:hover {
+    color: white;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+/* END FOOTER CSS */
